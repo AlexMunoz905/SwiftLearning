@@ -175,3 +175,32 @@ repeat {
 } while counter < 10
 
 // switch & loop statements
+var myAge = 14
+
+switch myAge {
+    case 14:
+        print("You are 14")
+    case 15:
+        print("You are 15")
+    default:
+        print("I'm not sure what you're age is")
+}
+
+// for & breaks
+for i in 1...10 {
+    print(i)
+    if i == 5 {
+        break
+    }
+}
+for z in 1...10 {
+    if z == 5 || z == 6 {
+        continue
+    }
+    print(z)
+}
+
+// functions
+
+
+
