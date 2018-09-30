@@ -131,6 +131,47 @@ myDict["Nintendo"] = "Switch"
 print(myDict)
 
 // for loops
+for newNum in 1...10 {
+    print(newNum)
+}
 
+for newNum in 1...20 {
+    print(newNum)
+}
 
+for newNum in stride(from: 10, to: 50, by: 2) {
+    print(newNum)
+}
 
+for newNum in stride(from: 50, to: 0, by: -5) {
+    print(newNum)
+}
+
+var newShoppingList = ["Apples", "Oranges", "Pinapple"]
+var legend = ["blue":"ocean", "green":"land"]
+
+for item in newShoppingList {
+    print(item)
+}
+
+for item in legend {
+    print(item.key)
+}
+
+for item in legend {
+    print(item)
+}
+
+for (index,value) in shoppingList.enumerated() {
+    print(index)
+    print(value)
+}
+
+// While Loops
+var counter = 0
+repeat {
+    print(counter)
+    counter += 1
+} while counter < 10
+
+// switch & loop statements
