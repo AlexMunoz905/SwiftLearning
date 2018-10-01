@@ -201,6 +201,50 @@ for z in 1...10 {
 }
 
 // functions
+func firstFunction() {
+    print("Hello, World!")
+    print("How are you?")
+}
+firstFunction()
 
+func add(num1: Int, num2: Int) {
+    print(num1 + num2)
+}
+add(num1: 40, num2: 20)
 
+func multiply(num1: Int, num2: Int) -> Int{
+    return num1 * num2
+}
 
+print (multiply(num1: 5, num2: 2))
+
+var num = multiply(num1: 5, num2: 4)
+print(num)
+
+// structues
+struct userLocation {
+    var name : String
+    var lattitude : Double
+    var longitude : Double
+}
+
+var myLocation = userLocation(name:"Alex", lattitude:53.958, longitude:232.42)
+print(myLocation.name)
+print(myLocation.lattitude)
+print(myLocation.longitude)
+
+func getLocation(loc:userLocation) {
+    print(loc.name)
+}
+getLocation(loc: myLocation)
+
+// enums
+enum Direction:String {
+    case North = "Go Forward"
+    case South = "Go Backward"
+    case East = "Take a Right"
+    case West = "Take a Left"
+}
+
+var dir = Direction.North
+dir.rawValue
